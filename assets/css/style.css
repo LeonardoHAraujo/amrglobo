@@ -234,7 +234,7 @@ h6 {
 
 #hero:before {
   content: "";
-  background: rgba(5, 13, 24, 0.3);
+  background: rgba(5, 13, 24, 0.7);
   position: absolute;
   bottom: 0;
   top: 0;
@@ -391,7 +391,7 @@ section {
   display: block;
   font-weight: 700;
   color: #050d18;
-  margin-left: 60px;
+  margin-left: 25px;
 }
 
 .facts .count-box p {
@@ -414,6 +414,44 @@ section {
 
 .facts .count-box a:hover {
   color: #1f5297;
+}
+
+.container-facts {
+  display: flex !important;
+}
+
+.container-facts img {
+  width: 40px
+}
+
+.pop-up {
+  position: relative;
+}
+
+.pop-up .pop-up-text {
+  visibility: hidden;
+  width: 350px;
+  background-color: black;
+  color: #fff !important;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1000000 !important;
+  top: -5px;
+  left: 70%;
+}
+
+.pop-up:hover .pop-up-text {
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  .pop-up .pop-up-text {
+    display: none;
+  }
 }
 
 /*--------------------------------------------------------------
